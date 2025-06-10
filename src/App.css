@@ -1,0 +1,35 @@
+.img-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.background-image {
+  width: 100%;
+  height: 100vh;
+}
+.title {
+  position: absolute;
+  top: 50%;              /* Vertically center */
+  left: 50%;             /* Horizontally center */
+  transform: translate(-50%, -50%); /* Centering trick */
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  padding: 5px;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5em 3em;
+  border-radius: 10px;
+  color: white;
+  width: 500px; /* 👈 You can change this */
+  max-width: 90%; /* Ensures it doesn't overflow on small screens */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
